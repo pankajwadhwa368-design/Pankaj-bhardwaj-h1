@@ -1,0 +1,451 @@
+<!DOCTYPE html>  <html lang="en">  
+<head>  
+  <base href="https://pankaj-156.vercel.app/">    <meta charset="UTF-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title id="site-title">𝐏𝐀𝐍𝐊𝐀𝐉 𝐁𝐇𝐀𝐑𝐃𝐖𝐀𝐉 (𝐎𝐅𝐅𝐈𝐂𝐈𝐀𝐋)™️</title>    <!-- =========================  
+       META PIXEL  
+  ========================== -->    <script>  
+    !function(f,b,e,v,n,t,s)  
+    {  
+      if(f.fbq)return;  
+      n=f.fbq=function(){  
+        n.callMethod ?  
+        n.callMethod.apply(n,arguments) :  
+        n.queue.push(arguments)  
+      };  
+      if(!f._fbq)f._fbq=n;  
+      n.push=n;  
+      n.loaded=!0;  
+      n.version='2.0';  
+      n.queue=[];  
+      t=b.createElement(e);  
+      t.async=!0;  
+      t.src=v;  
+      s=b.getElementsByTagName(e)[0];  
+      s.parentNode.insertBefore(t,s)  
+    }(  
+      window,  
+      document,  
+      'script',  
+      'https://connect.facebook.net/en_US/fbevents.js'  
+    );  
+  
+    fbq('init', '896799696606044');  
+    fbq('track', 'PageView');  
+  </script>    <noscript>  
+    <img  
+      height="1"  
+      width="1"  
+      style="display:none"  
+      src="https://www.facebook.com/tr?id=896799696606044&ev=PageView&noscript=1"  
+      alt=""  
+    />  
+  </noscript>  
+  <!-- END META PIXEL -->    <!-- Fonts -->    <link  
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"  
+    rel="stylesheet"  
+  >    <!-- Font Awesome -->    <link  
+    rel="stylesheet"  
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"  
+    crossorigin="anonymous"  
+  >    <!-- Bootstrap -->    <link  
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"  
+    rel="stylesheet"  
+  >    <style>  
+    * {  
+      box-sizing: border-box;  
+    }  
+  
+    body {  
+      font-family: 'Poppins', sans-serif;  
+      margin: 0;  
+      padding: 0;  
+      background: linear-gradient(135deg, #0d0d0d, #1a1a1a);  
+      color: #fff;  
+    }  
+  
+    .hero {  
+      min-height: 100vh;  
+      display: flex;  
+      align-items: center;  
+      justify-content: center;  
+      text-align: center;  
+      padding: 40px 20px;  
+      background:  
+        url('https://www.transparenttextures.com/patterns/cubes.png');  
+    }  
+  
+    .glass-box {  
+      background: rgba(255,255,255,0.05);  
+      border: 1px solid rgba(255,255,255,0.15);  
+      border-radius: 20px;  
+      padding: 40px 25px;  
+      box-shadow: 0 8px 30px rgba(0,0,0,0.4);  
+      backdrop-filter: blur(10px);  
+      max-width: 650px;  
+      width: 100%;  
+    }  
+  
+    .logo img {  
+      width: 120px;  
+      height: 120px;  
+      border-radius: 50%;  
+      border: 3px solid #ffcc00;  
+      object-fit: cover;  
+      margin-bottom: 20px;  
+      transition: transform 0.3s ease;  
+    }  
+  
+    .logo img:hover {  
+      transform: scale(1.08);  
+    }  
+  
+    h1 {  
+      font-weight: 700;  
+      color: #ffcc00;  
+      font-size: 2rem;  
+      display: flex;  
+      align-items: center;  
+      justify-content: center;  
+      gap: 10px;  
+      line-height: 1.3;  
+    }  
+  
+    .crown {  
+      color: gold;  
+      animation: shine 2s infinite linear;  
+    }  
+  
+    @keyframes shine {  
+      0% {  
+        opacity: 0.6;  
+        transform: scale(1);  
+      }  
+  
+      50% {  
+        opacity: 1;  
+        transform: scale(1.3);  
+      }  
+  
+      100% {  
+        opacity: 0.6;  
+        transform: scale(1);  
+      }  
+    }  
+  
+    p {  
+      color: #ddd;  
+      margin: 10px 0;  
+      font-size: 16px;  
+    }  
+  
+    .stats {  
+      display: flex;  
+      justify-content: center;  
+      margin: 20px 0;  
+      flex-wrap: wrap;  
+      gap: 12px;  
+    }  
+  
+    .stat-box {  
+      background: rgba(255,255,255,0.08);  
+      padding: 12px 20px;  
+      border-radius: 12px;  
+      font-size: 14px;  
+      font-weight: 600;  
+      color: #fff;  
+    }  
+  
+    a.cta-btn {  
+      background: linear-gradient(90deg, #0072ff, #00c6ff);  
+      padding: 14px 40px;  
+      border-radius: 50px;  
+      font-size: 18px;  
+      color: #fff;  
+      font-weight: 600;  
+      display: inline-block;  
+      margin: 18px 0;  
+      text-decoration: none;  
+      transition: all 0.3s ease;  
+      box-shadow: 0 4px 15px rgba(0,198,255,0.4);  
+      animation: pulse 1.5s infinite;  
+    }  
+  
+    a.cta-btn:hover {  
+      transform: translateY(-2px);  
+    }  
+  
+    @keyframes pulse {  
+      0% {  
+        box-shadow: 0 0 0 0 rgba(0,198,255,0.7);  
+      }  
+  
+      70% {  
+        box-shadow: 0 0 0 20px rgba(0,198,255,0);  
+      }  
+  
+      100% {  
+        box-shadow: 0 0 0 0 rgba(0,198,255,0);  
+      }  
+    }  
+  
+    .highlight {  
+      color: #00ff88;  
+      font-weight: 600;  
+    }  
+  
+    .benefits {  
+      display: flex;  
+      flex-direction: column;  
+      gap: 12px;  
+      margin: 20px 0;  
+    }  
+  
+    .benefit-card {  
+      background: rgba(255,255,255,0.05);  
+      border: 1px solid rgba(255,255,255,0.1);  
+      padding: 12px;  
+      border-radius: 12px;  
+      text-align: left;  
+      font-size: 15px;  
+    }  
+  
+    footer {  
+      margin-top: 20px;  
+      font-size: 13px;  
+      color: #aaa;  
+    }  
+  
+    @media (max-width: 576px) {  
+      .glass-box {  
+        padding: 30px 18px;  
+      }  
+  
+      h1 {  
+        font-size: 1.45rem;  
+      }  
+  
+      .logo img {  
+        width: 105px;  
+        height: 105px;  
+      }  
+  
+      a.cta-btn {  
+        width: 100%;  
+        padding: 13px 20px;  
+        font-size: 16px;  
+      }  
+    }  
+  </style>  </head>  <body>    <!-- =========================  
+       EASY VARIABLES  
+  ========================== -->    <script>  
+    const SITE_NAME =  
+      "𝐏𝐀𝐍𝐊𝐀𝐉 𝐁𝐇𝐀𝐑𝐃𝐖𝐀𝐉 (𝐎𝐅𝐅𝐈𝐂𝐈𝐀𝐋)™️";  
+  
+    const SITE_IMAGE =  
+      "pankajjii.jpg";  
+  
+    const TELEGRAM_LINK =  
+      "https://telegram.me/+QToHW_B7N8M4N2E1";  
+  
+    /*  
+      Subscribe Event Value  
+    */  
+    const SUBSCRIBE_VALUE = 9.99;  
+    const SUBSCRIBE_CURRENCY = "INR";  
+  </script>    <section class="hero">  <div class="glass-box">  
+
+  <!-- LOGO -->  
+  <div class="logo">  
+    <img  
+      id="site-logo"  
+      alt="Brand Logo"  
+    >  
+  </div>  
+
+
+  <!-- HEADING -->  
+  <h1 id="site-heading"></h1>  
+
+
+  <p>✅ Trusted by thousands of learners</p>  
+
+
+  <!-- STATS -->  
+  <div class="stats">  
+
+    <div class="stat-box">  
+      24/7 Updates  
+    </div>  
+
+    <div class="stat-box">  
+      Free to Join  
+    </div>  
+
+  </div>  
+
+
+  <!-- TELEGRAM CTA -->  
+  <a  
+    id="cta-btn-1"  
+    class="cta-btn"  
+    href="#"  
+    rel="noopener noreferrer"  
+  >  
+    <i class="fa-brands fa-telegram me-1"></i>  
+    Join on Telegram  
+  </a>  
+
+
+  <!-- BENEFITS -->  
+  <div class="benefits">  
+
+    <div class="benefit-card">  
+      <i class="fa-solid fa-check-circle highlight"></i>  
+      Market Insights & Discussions  
+    </div>  
+
+    <div class="benefit-card">  
+      <i class="fa-solid fa-check-circle highlight"></i>  
+      Learn with Experts  
+    </div>  
+
+    <div class="benefit-card">  
+      <i class="fa-solid fa-check-circle highlight"></i>  
+      Practical Strategies  
+    </div>  
+
+  </div>  
+
+
+  <footer>  
+    Educational content for learning and knowledge sharing.  
+  </footer>  
+
+</div>
+
+  </section>    <!-- =========================  
+       APPLY VARIABLES + TRACKING  
+  ========================== -->    <script>  
+  
+    /* Apply site variables */  
+  
+    document.getElementById("site-title").textContent =  
+      SITE_NAME;  
+  
+    document.getElementById("site-heading").innerHTML =  
+      '<i class="fa-solid fa-crown crown"></i> ' +  
+      SITE_NAME +  
+      ' <i class="fa-solid fa-crown crown"></i>';  
+  
+    document.getElementById("site-logo").src =  
+      SITE_IMAGE;  
+  
+    const telegramButton =  
+      document.getElementById("cta-btn-1");  
+  
+    telegramButton.href =  
+      TELEGRAM_LINK;  
+  
+  
+    /* ==================================  
+       URL PARAMETERS  
+       UTM + FBCLID  
+    ================================== */  
+  
+    const urlParams =  
+      new URLSearchParams(window.location.search);  
+  
+    const trackingParams = {};  
+  
+    [  
+      "utm_source",  
+      "utm_medium",  
+      "utm_campaign",  
+      "utm_content",  
+      "utm_term",  
+      "fbclid"  
+    ].forEach(function(param) {  
+  
+      const value = urlParams.get(param);  
+  
+      if (value) {  
+        trackingParams[param] = value;  
+      }  
+  
+    });  
+  
+  
+    /* ==================================  
+       TELEGRAM CLICK + SUBSCRIBE EVENT  
+    ================================== */  
+  
+    telegramButton.addEventListener("click", function(event) {  
+  
+      /*  
+        Generate unique event ID  
+      */  
+      const eventID =  
+        (window.crypto && crypto.randomUUID)  
+          ? crypto.randomUUID()  
+          : String(Date.now()) + "-" +  
+            Math.random().toString(36).substring(2);  
+  
+  
+      /*  
+        Meta Pixel Subscribe Event  
+  
+        VALUE = 9.99  
+        CURRENCY = INR  
+      */  
+  
+      if (typeof fbq === "function") {  
+  
+        fbq(  
+          "track",  
+          "Subscribe",  
+          {  
+            value: SUBSCRIBE_VALUE,  
+            currency: SUBSCRIBE_CURRENCY  
+          },  
+          {  
+            eventID: eventID  
+          }  
+        );  
+  
+      }  
+  
+      /*  
+        Save tracking information locally  
+        for debugging / attribution.  
+      */  
+  
+      try {  
+  
+        localStorage.setItem(  
+          "subscribe_event_id",  
+          eventID  
+        );  
+  
+        localStorage.setItem(  
+          "subscribe_value",  
+          String(SUBSCRIBE_VALUE)  
+        );  
+  
+        localStorage.setItem(  
+          "subscribe_currency",  
+          SUBSCRIBE_CURRENCY  
+        );  
+  
+        localStorage.setItem(  
+          "tracking_params",  
+          JSON.stringify(trackingParams)  
+        );  
+  
+      } catch (e) {  
+        /* Ignore localStorage errors */  
+      }  
+  
+    });  
+  
+  </script>  </body>  
+</html>
